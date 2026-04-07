@@ -34,7 +34,7 @@ function HeroSection() {
       <div className="flex justify-center gap-4 mt-8">
         <a
           href="#"
-          className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
+          className="px-6 py-3 rounded-xl bg-main-blue text-white font-semibold hover:bg-blue-700 transition"
         >
           Coba Gratis Sekarang
         </a>

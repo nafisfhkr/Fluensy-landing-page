@@ -30,7 +30,7 @@ export default function ChallengesSection() {
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {/* CARD 1 */}
           <div className="p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
-            <div className="text-blue-600 text-3xl mb-4"><Users /></div>
+            <div className="text-main-blue text-3xl mb-4"><Users /></div>
             <h4 className="font-semibold text-black mb-2">
               Kurangnya Transparansi Audience
             </h4>
@@ -41,7 +41,7 @@ export default function ChallengesSection() {
 
           {/* CARD 2 */}
           <div className="p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
-            <div className="text-blue-600 text-3xl mb-4"><CircleDollarSign /></div>
+            <div className="text-main-blue text-3xl mb-4"><CircleDollarSign /></div>
             <h4 className="font-semibold text-black mb-2">
               Alokasi Anggaran yang Kurang Efisien
             </h4>
@@ -52,7 +52,7 @@ export default function ChallengesSection() {
 
           {/* CARD 3 */}
           <div className="p-8 rounded-xl bg-white shadow-[0_10px_30px_rgba(59,130,246,0.15)] text-left">
-            <div className="text-blue-600 text-3xl mb-4"><TrendingUp /></div>
+            <div className="text-main-blue text-3xl mb-4"><TrendingUp /></div>
             <h4 className="font-semibold text-black mb-2">
               Keterbatasan Pengukuran ROI
             </h4>

@@ -30,7 +30,7 @@ export default function FlexibleAccess1Section() {
 
                 {/* CARD 1 */}
                 <div className="p-8 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-                    <div className="text-blue-600 text-3xl mb-4">
+                    <div className="text-main-blue text-3xl mb-4">
                         <LayoutDashboard />
                     </div>
                     <h4 className="font-semibold text-black mb-2">Base Subscription</h4>
@@ -46,7 +46,7 @@ export default function FlexibleAccess1Section() {
 
                 {/* CARD 2 */}
                 <div className="p-8 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-                    <div className="text-blue-600 text-3xl mb-4">
+                    <div className="text-main-blue text-3xl mb-4">
                         <CircleDollarSign />
                     </div>
                     <h4 className="font-semibold text-black mb-2">Credits (Coin)</h4>
@@ -62,7 +62,7 @@ export default function FlexibleAccess1Section() {
 
                 {/* CARD 3 */}
                 <div className="p-8 bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-                    <div className="text-blue-600 text-3xl mb-4">
+                    <div className="text-main-blue text-3xl mb-4">
                         <TrendingUp />
                     </div>
                     <h4 className="font-semibold text-black mb-2">Flexible Access</h4>

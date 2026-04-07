@@ -4,6 +4,9 @@ import ChallengesSection from "./components/sections/challenge_section";
 import SolutionSection from "./components/sections/solution_section";
 import HowSection from "./components/sections/how_section";
 import FlexibleAccess1Section from "./components/sections/flexible_access1";
+import FlexibleAccess2Section from "./components/sections/flexible_access2";
+import CTASection from "./components/sections/cta_section";
+import FooterSection from "./components/sections/footer_section";
 
 
 
@@ -16,6 +19,9 @@ export default function LandingPage() {
       <SolutionSection />
       <HowSection />
       <FlexibleAccess1Section />
+      <FlexibleAccess2Section />
+      <CTASection />
+      <FooterSection />
     </main>
   );
 }
