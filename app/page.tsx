@@ -7,7 +7,7 @@ import FlexibleAccess1Section from "./components/sections/flexible_access1";
 import FlexibleAccess2Section from "./components/sections/flexible_access2";
 import CTASection from "./components/sections/cta_section";
 import FooterSection from "./components/sections/footer_section";
-import Navbar from "./layout/navbar";
+import Navbar from "./components/layout/navbar";
 
 // MAIN PAGE
 export default function LandingPage() {

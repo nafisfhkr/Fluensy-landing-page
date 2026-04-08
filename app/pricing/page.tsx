@@ -54,12 +54,15 @@ export default function PricingPage() {
             </li>
           </ul>
 
-          <button className="mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl">
+          <Link 
+            href="/checkout?plan=free"
+            className="block text-center mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl cursor-pointer hover:bg-gray-200 transition-colors duration-200"
+          >
             Get Started
-          </button>
+          </Link>
         </div>
 
-        {/* BASE */}
+        {/* BASE / TIER 1 */}
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-black">
             Rp89,000<span className="text-sm font-normal"> /month</span>
@@ -92,12 +95,15 @@ export default function PricingPage() {
             </li>
           </ul>
 
-          <button className="mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl">
+          <Link 
+            href="/checkout?plan=tier1"
+            className="block text-center mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl cursor-pointer hover:bg-gray-200 transition-colors duration-200"
+          >
             Upgrade
-          </button>
+          </Link>
         </div>
 
-        {/* PRO (POPULAR) */}
+        {/* PRO (POPULAR) / TIER 2 */}
         <div className="relative rounded-2xl p-8 text-white shadow-xl bg-gradient-to-b from-[#006FFF] to-[#4DA3FF] scale-105">
           {/* LABEL */}
           <div className="absolute top-4 right-4 text-xs bg-white/20 px-3 py-1 rounded-full">
@@ -139,12 +145,15 @@ export default function PricingPage() {
             </li>
           </ul>
 
-          <button className="mt-8 w-full bg-white text-[#006FFF] py-3 rounded-xl font-semibold">
+          <Link 
+            href="/checkout?plan=tier2"
+            className="block text-center mt-8 w-full bg-white text-[#006FFF] py-3 rounded-xl font-semibold cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+          >
             Upgrade
-          </button>
+          </Link>
         </div>
 
-        {/* ENTERPRISE */}
+        {/* ENTERPRISE / TIER 3 */}
         <div className="bg-white rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-black">
             Rp249,000<span className="text-sm font-normal"> /month</span>
@@ -181,9 +190,12 @@ export default function PricingPage() {
             </li>
           </ul>
 
-          <button className="mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl">
+          <Link 
+            href="/checkout?plan=tier3"
+            className="block text-center mt-8 w-full bg-gray-100 text-gray-600 py-3 rounded-xl cursor-pointer hover:bg-gray-200 transition-colors duration-200"
+          >
             Upgrade
-          </button>
+          </Link>
         </div>
       </div>
     </div>

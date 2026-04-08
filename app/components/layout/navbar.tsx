@@ -118,7 +118,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#"
+                href="/budget-optimazer"
                 onClick={closeMobileMenu}
                 className="px-5 py-2 rounded-full bg-main-blue text-white text-sm font-semibold hover:bg-blue-700 transition text-center"
               >
