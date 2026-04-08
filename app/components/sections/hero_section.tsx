@@ -1,8 +1,11 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // HERO SECTION
 function HeroSection() {
+  const router = useRouter();
+
   return (
     <section className="min-h-screen w-full pt-20 md:pt-24 lg:pt-32 pb-12 md:pb-16 lg:pb-20 bg-foreground text-center relative overflow-hidden px-4">
       {/* BADGE */}
@@ -34,14 +37,12 @@ function HeroSection() {
 
       {/* BUTTONS */}
       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mt-6 md:mt-8">
-        <a
-          href="#"
+        <button
+          onClick={() => router.push("/register")}
           className="px-6 py-2 md:py-3 rounded-xl bg-blue-600 text-white text-sm md:text-base font-semibold hover:bg-blue-700 transition"
         >
           Coba Gratis Sekarang
-        </a>
-
-       
+        </button>
       </div>
 
       {/* IMAGE */}
