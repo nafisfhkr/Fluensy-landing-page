@@ -124,7 +124,7 @@ export default function FlexibleAccess1Section() {
         {/* BUTTON */}
         <div className="mt-8 md:mt-12">
           <a
-            href="#"
+            href="/pricing"
             className="inline-block px-6 md:px-8 py-2 md:py-3 rounded-xl bg-main-blue text-white text-sm md:text-base font-semibold hover:bg-blue-700 transition"
           >
             Lihat Detail Paket

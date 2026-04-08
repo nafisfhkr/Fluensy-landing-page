@@ -20,7 +20,7 @@ export default function Navbar() {
   const navItems = [
     { href: "#features", label: "Features" },
     { href: "#resources", label: "Resources" },
-    { href: "#pricing", label: "Pricing" },
+    { href: "/pricing", label: "Pricing" },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* RIGHT BUTTONS - DESKTOP */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#login"
+            href="/login"
             className="text-sm font-medium text-main-blue hover:text-white hover:bg-main-blue px-5 py-2 rounded-full border border-main-blue transition"
           >
             Login
