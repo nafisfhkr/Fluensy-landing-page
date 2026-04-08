@@ -37,7 +37,7 @@ export default function CTASection() {
           <div className="mt-8 md:mt-10 flex justify-center gap-3 md:gap-4 flex-wrap">
             {/* PRIMARY BUTTON */}
             <a
-              href="#"
+              href="/register"
               className="
                 px-6 md:px-8 py-2 md:py-3 rounded-xl text-sm md:text-base
                 bg-main-blue text-white font-semibold
