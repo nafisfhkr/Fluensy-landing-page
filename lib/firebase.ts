@@ -1,5 +1,5 @@
 // Firebase configuration
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -11,9 +11,11 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Singleton pattern: Gunakan app yang sudah ada jika tersedia, jika tidak baru buat baru
+// Ini mencegah error "Firebase App named '[DEFAULT]' already exists"
+const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 
-// Initialize Firebase Authentication and get a reference to the service
+// Initialize Firebase Authentication
 export const auth = getAuth(app);
+
 export default app;
