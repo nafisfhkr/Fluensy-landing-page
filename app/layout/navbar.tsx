@@ -80,6 +80,7 @@ export default function Navbar() {
               {item.label === "Features" ? (
                 <button
                   type="button"
+                  onClick={openFeaturesPopup}
                   onMouseEnter={openFeaturesPopup}
                   onMouseLeave={closeFeaturesPopup}
                   className="text-sm font-medium text-black hover:text-main-blue hover:font-semibold transition"
@@ -89,6 +90,7 @@ export default function Navbar() {
               ) : item.label === "Resources" ? (
                 <button
                   type="button"
+                  onClick={openResourcesPopup}
                   onMouseEnter={openResourcesPopup}
                   onMouseLeave={closeResourcesPopup}
                   className="text-sm font-medium text-black hover:text-main-blue hover:font-semibold transition"
@@ -157,7 +159,7 @@ export default function Navbar() {
           <div className="absolute inset-x-0 top-full flex justify-center mt-2">
             <div
               ref={featuresRef}
-              className="w-full max-w-4xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0"
+              className="w-full max-w-screen-sm md:max-w-4xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh]"
             >
               <div className="grid gap-6 items-start">
                 <div className="space-y-4">
@@ -240,7 +242,7 @@ export default function Navbar() {
           <div className="absolute inset-x-0 top-full flex justify-center mt-2">
             <div
               ref={resourcesRef}
-              className="w-full max-w-6xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0"
+              className="w-full max-w-screen-sm md:max-w-6xl rounded-[28px] border border-slate-200 bg-white shadow-2xl p-6 mx-4 md:mx-0 overflow-hidden max-h-[90vh]"
             >
               <div className="grid gap-6 items-start">
                 <div className="space-y-4">
@@ -341,16 +343,40 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-foreground border-t border-gray-200 animate-in fade-in slide-in-from-top-2 duration-300">
           <div className="flex flex-col px-4 py-4 gap-4">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                onClick={closeMobileMenu}
-                className="text-sm font-medium text-black hover:text-main-blue transition"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.label === "Features" ? (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() => {
+                    openFeaturesPopup();
+                  }}
+                  className="text-left text-sm font-medium text-black hover:text-main-blue transition"
+                >
+                  {item.label}
+                </button>
+              ) : item.label === "Resources" ? (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={() => {
+                    openResourcesPopup();
+                  }}
+                  className="text-left text-sm font-medium text-black hover:text-main-blue transition"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={closeMobileMenu}
+                  className="text-sm font-medium text-black hover:text-main-blue transition"
+                >
+                  {item.label}
+                </a>
+              ),
+            )}
 
             <div className="border-t border-gray-200 pt-4 flex flex-col gap-3">
               <a
